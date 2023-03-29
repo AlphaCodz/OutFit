@@ -12,12 +12,14 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import environ
-import os
+import os, sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-STATIC_DIR = os.path.join(BASE_DIR, "static")
-TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
+STATIC_DIR = os.path.join(BASE_DIR, "myapps/static")
+TEMPLATE_DIR = os.path.join(BASE_DIR, "myapps/templates")
+sys.path.insert(0, os.path.join(BASE_DIR, "myapps"))
+
 
 # ENV
 env = environ.Env()
@@ -46,6 +48,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     
     "app",
+    "api"
 ]
 
 MIDDLEWARE = [
