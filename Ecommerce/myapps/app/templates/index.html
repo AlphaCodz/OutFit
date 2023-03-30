@@ -18,9 +18,9 @@
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link" href="{% url 'app:home' %}">Home</a>
 						</li>
-						<li><a class="nav-link" href="shop.html">Shop</a></li>
+						<li><a class="nav-link" href="{% url 'app:shop' %}">Shop</a></li>
 						<li><a class="nav-link" href="about.html">About us</a></li>
 						<li><a class="nav-link" href="services.html">Services</a></li>
 						<li><a class="nav-link" href="blog.html">Blog</a></li>
@@ -66,9 +66,9 @@
 
 					<!-- Start Column 1 -->
 					<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
-						<h2 class="mb-4 section-title">Crafted with excellent material.</h2>
+						<h2 class="mb-4 section-title"><strong>Crafted</strong> with excellent material.</h2>
 						<p class="mb-4">At {O}utFit, we take great pride in sourcing only the highest quality materials for our clothing. Our fabrics are carefully selected and crafted by skilled artisans to ensure that you receive only the best. </p>
-						<p><a href="shop.html" class="btn">Explore</a></p>
+						<p><a href="{% url 'app:shop' %}" class="btn">Explore</a></p>
 					</div> 
 					<!-- End Column 1 -->
 
@@ -445,8 +445,8 @@
 
 				<div class="row g-5 mb-5">
 					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
-						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">{O}utFit<span>.</span></a></div>
+						<p class="mb-4">Unleash your unique style with {O}utFit - the perfect blend of comfort, quality, and style for the modern fashionista.</p>
 
 						<ul class="list-unstyled custom-social">
 							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
