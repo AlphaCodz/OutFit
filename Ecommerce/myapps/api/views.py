@@ -2,6 +2,7 @@ from django.shortcuts import render
 from helpers.views import BaseView
 from .models import Customer
 from rest_framework.response import Response
+import requests
 # Create your views here.
 class SignUpCustomer(BaseView):
     required_post_fields = ["first_name", "last_name", "email"]

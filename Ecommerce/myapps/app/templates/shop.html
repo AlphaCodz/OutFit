@@ -6,7 +6,7 @@
 <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 			<div class="container">
-				<a class="navbar-brand" href="index.html">{O}utFit<span>.</span></a>
+				<a class="navbar-brand" href="">{O}utFit<span>.</span></a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -20,8 +20,8 @@
 						<li class="nav-item active">
 							<a class="nav-link" href="{% url 'app:shop' %}">Shop</a>
 						</li>
-						<li><a class="nav-link" href="about.html">About us</a></li>
-						<li><a class="nav-link" href="services.html">Services</a></li>
+						<li><a class="nav-link" href="{% url 'app:about' %}">About us</a></li>
+						<li><a class="nav-link" href="{% url 'app:service' %}">Services</a></li>
 						<li><a class="nav-link" href="blog.html">Blog</a></li>
 						<li><a class="nav-link" href="contact.html">Contact us</a></li>
 					</ul>
@@ -223,7 +223,7 @@
 						<div class="row links-wrap">
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
-									<li><a href="#">About us</a></li>
+									<li><a href="{% url 'app:about' %}">About us</a></li>
 									<li><a href="#">Services</a></li>
 									<li><a href="#">Blog</a></li>
 									<li><a href="#">Contact us</a></li>
